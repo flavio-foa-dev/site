@@ -138,3 +138,6 @@ footer {
   color: white;
 }
 
+.icon:hover {
+  color: rgb(41, 29, 79);
+}

@@ -179,13 +179,18 @@ footer {
     border: none;
     background: none;
     cursor: pointer;
-    gap: .5rem
+    gap: .5rem;
+    color: white;
+    /* font-size: 10px; */
+    font-weight: 600;
+    /* font-family: 'EB Garamond', serif; */
   }
 
   #hamb {
+    color: white;
     display: block;
     width: 20px;
-    border-top: 3px solid;
+    border-top: 2px solid;
   }
 
   #hamb::after, #hamb::before {
@@ -195,7 +200,22 @@ footer {
     height: 2px;
     background: currentColor;
     margin-top: 5px;
-    border-top: 1px solid;
+    transition: .7s;
+    position: relative;
+    /* border-top: 0px solid; */
+  }
+
+  #nav.active #hamb  {
+    border-top-color: transparent;
+  }
+
+  #nav.active #hamb::before  {
+    transform: rotate(315deg);
+  }
+
+  #nav.active #hamb::after  {
+    transform: rotate(-315deg);
+    top:-7px;
   }
 
 

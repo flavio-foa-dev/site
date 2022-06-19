@@ -141,3 +141,28 @@ footer {
 .icon:hover {
   color: rgb(41, 29, 79);
 }
+
+#btn-mobile {
+  display: none;
+}
+
+@media(max-width: 700px) {
+  #btn-mobile {
+    display: block;
+
+
+  }
+  #menuu {
+    display: none;
+
+
+  }
+
+  .active #menuu  {
+    display: flex;
+    justify-content: space-between;
+
+  }
+
+
+}

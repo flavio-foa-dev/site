@@ -2,6 +2,7 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+
 }
 
 nav {
@@ -55,7 +56,7 @@ nav .logo a {
 .hero{
   background-image:  url(../../img/predioo.jpg);
   /* width: 100%; */
-  height: 200vh;
+  height: 110vh;
   background-size: cover;
   background-repeat: no-repeat;
   /* background-position: center; */
@@ -66,9 +67,6 @@ nav .logo a {
 .center {
   padding: 50px;
   text-align: center;
-
-
-
 }
 
 .center .title {
@@ -108,15 +106,126 @@ nav .logo a {
   transition: all 0.3s ease;
 }
 
-.btns button:first-child {
+.btns button {
   color: rgb(14, 14, 6);
   background: none;
 }
 
-.btns button:first-child:hover {
+.btns button:hover {
   background: #4827dd;
   color: white;
 }
+
+.text {
+  display:flex;
+  flex-flow:column wrap;
+  align-items: center;
+  padding: 15px;
+}
+
+.text1{
+  margin-top:10px;
+  margin-bottom: 7px;
+  font-size:x-large;
+  font-weight: 900;
+  font-style: italic;
+}
+
+.text2 {
+  font-weight: 900;
+  font-style: italic;
+}
+
+hr {
+  width: 300px;
+  background: black;
+  border: 1px solid;
+  margin: 0 auto 25px auto;
+}
+
+.container-img   {
+  max-width:800px;
+  background:#e0dcf0;
+  position: relative;
+  margin: 0 auto;
+  height: 250px;
+  margin-bottom: 10px;
+  margin-top: 10px;
+
+
+}
+
+.screenshot {
+  flex-flow: row wrap;
+  overflow-x:auto;
+  align-items: center;
+  display:flex;
+
+ }
+
+ .screenshot::-webkit-scrollbar{
+  display: none;
+ }
+
+.gallery {
+  display:flex;
+  flex-wrap: nowrap;
+  gap: 13px;
+
+
+}
+
+.image {
+ transition: all 600ms ease-in-out;
+ opacity: 0.3;
+
+}
+
+
+.gallery img {
+  width: 350px;
+  height: 250px;
+  flex-shrink: 0;
+  transition: all 600ms ease-in-out
+}
+
+
+.atual{
+  opacity: 1.0;
+}
+
+.control {
+  z-index: 10;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  right: auto;
+  left: 0;
+  border: none;
+  opacity: 0.2;
+  color: #fff;
+  padding: 10px;
+  background: linear-gradient(to left, transparent 0%, blue 200% );
+  cursor: pointer;
+  text-align: center;
+  font-weight: 900;
+}
+
+.rigth {
+  right: 0;
+  left: auto;
+  background: linear-gradient(to right, transparent 0%, blue 200% );
+}
+
+.left {
+  transform: rotate(180deg)
+}
+
+.control:hover{
+  opacity: 1.0;
+  transition: all 600ms ease-in-out
+
+};
 
 .media-icons{
   padding: 1px;
@@ -171,6 +280,10 @@ footer {
     height: calc(100vh - 40px);
   }
 
+  /* .sub-title, .title {
+    display: none;
+  } */
+
   .active #menuu  {
     display: flex;
     justify-content: space-around;
@@ -211,7 +324,7 @@ footer {
     height: 2px;
     background: currentColor;
     margin-top: 5px;
-    transition: .7s;
+    transition: 1.3s;
     position: relative;
     /* border-top: 0px solid; */
   }

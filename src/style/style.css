@@ -145,7 +145,7 @@ hr {
 
 .container-img   {
   max-width:800px;
-  background:#e0dcf0;
+  background:#9d9dba;
   position: relative;
   margin: 0 auto;
   height: 250px;
@@ -340,6 +340,17 @@ footer {
   #nav.active #hamb::after  {
     transform: rotate(-315deg);
     top:-7px;
+  }
+
+  .image {
+    transition: all 600ms ease-in-out;
+    opacity: 1.0;
+
+   }
+
+   .center .title {
+    font-size: x-large;
+    font-weight: 600;
   }
 
 
